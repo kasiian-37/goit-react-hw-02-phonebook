@@ -1,0 +1,17 @@
+.inputStyle {
+  margin: 0 30px 30px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 5px 6px rgba(5, 2, 0, 0.4);
+}
+
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.filterInput {
+  margin-top: 10px;
+  outline: none;
+}
