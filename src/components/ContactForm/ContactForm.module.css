@@ -1,0 +1,57 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 5px 6px rgba(5, 2, 0, 0.4);
+}
+
+.nameLabel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.numberLabel {
+composes: nameLabel;
+}
+
+.contactFormInput {
+  outline: none;
+  padding: 5px;
+  margin-top: 5px;
+}
+.errorMessage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: red;
+}
+.submitButton {
+  margin: 0 auto;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid rgb(250,172,17);
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+  transition: box-shadow .2s, border-color .2s;
+
+}
+.submitButton:active,
+.submitButton:hover {
+  color: #000000;
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+  
+}
